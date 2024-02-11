@@ -1,0 +1,92 @@
+{
+  "name": "zdl-vscode",
+  "displayName": "zdl-vscode",
+  "description": "ZDL Editor for VSCode",
+  "icon": "resources/zenwave-logo.png",
+  "version": "0.0.1",
+  "license": "MIT",
+  "publisher": "ZenWave360",
+  "bugs": {
+    "url": "https://github.com/ZenWave360/zdl-vscode/issues"
+  },
+  "homepage": "https://www.zenwave360.io/",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ZenWave360/zdl-vscode.git"
+  },
+  "author": {
+    "name": "Iván García Sainz-Aja",
+    "email": "ivangsa@gmail.com",
+    "url": "https://github.com/ivangsa"
+  },
+  "engines": {
+    "vscode": "^1.86.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "activationEvents": [],
+  "browser": "./dist/web/extension.js",
+  "contributes": {
+    "languages": [
+      {
+        "id": "zdl",
+        "aliases": [
+          "ZenWave Domain Language ZDL",
+          "zdl"
+        ],
+        "extensions": [
+          "zdl",
+          "zw"
+        ],
+        "configuration": "./syntaxes/language-configuration.json",
+        "icon": {
+          "light": "./resources/zenwave-logo.png",
+          "dark": "./resources/zenwave-logo.png"
+        }
+      }
+    ],
+    "grammars": [
+      {
+        "language": "zdl",
+        "scopeName": "source.zdl",
+        "path": "./syntaxes/zdl.tmLanguage.json"
+      }
+    ]
+  },
+  "keywords": [
+    "ZenWave 360º",
+    "DSL",
+    "DDD",
+    "Event Storming",
+    "Domain Driven Design",
+    "API-First"
+  ],
+  "scripts": {
+    "test": "vscode-test-web --browserType=chromium --extensionDevelopmentPath=. --extensionTestsPath=dist/web/test/suite/index.js",
+    "pretest": "npm run compile-web",
+    "vscode:prepublish": "npm run package-web",
+    "compile-web": "webpack",
+    "watch-web": "webpack --watch",
+    "package-web": "webpack --mode production --devtool hidden-source-map",
+    "lint": "eslint src --ext ts",
+    "run-in-browser": "vscode-test-web --browserType=chromium --extensionDevelopmentPath=. ."
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.86.0",
+    "@types/mocha": "^10.0.6",
+    "@types/assert": "^1.5.10",
+    "eslint": "^8.56.0",
+    "@typescript-eslint/eslint-plugin": "^6.15.0",
+    "@typescript-eslint/parser": "^6.15.0",
+    "mocha": "^10.2.0",
+    "typescript": "^5.3.3",
+    "@vscode/test-web": "^0.0.50",
+    "ts-loader": "^9.5.1",
+    "webpack": "^5.89.0",
+    "webpack-cli": "^5.1.4",
+    "@types/webpack-env": "^1.18.4",
+    "assert": "^2.1.0",
+    "process": "^0.11.10"
+  }
+}
