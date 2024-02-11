@@ -1,7 +1,7 @@
 {
   "name": "zdl-vscode",
-  "displayName": "zdl-vscode",
-  "description": "ZDL Editor for VSCode",
+  "displayName": "ZDL Editor for VSCode",
+  "description": "Provides Syntax Highlighting and Language Support for ZenWave Domain Language (ZDL) in Visual Studio Code",
   "icon": "resources/zenwave-logo.png",
   "version": "0.0.2",
   "license": "MIT",

@@ -1,6 +1,6 @@
 # ZenWave Domain Modeling Language ZDL Editor
 
-**ZDL** is a domain specific language (DSL) for modeling Event-Driven microservices to work with **ZenWave 360º**.
+[ZDL](https://www.zenwave360.io/docs/event-driven-design/zenwave-domain-language) is a domain specific language (DSL) for modeling Event-Driven microservices to work with **ZenWave 360º**.
 
 [ZenWave 360º](https://www.zenwave360.io/) is a set of tools built on the foundations of Domain Driven Design and API-First principles for Event-Driven Architectures.
 

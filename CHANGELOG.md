@@ -2,6 +2,10 @@
 
 All notable changes to the "zdl-vscode" extension will be documented in this file.
 
+## [0.0.3]
+
+- Updates Extension Name
+
 ## [0.0.2]
 
 - Make compatible with VSCode 1.85.0
