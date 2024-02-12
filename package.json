@@ -3,7 +3,7 @@
   "displayName": "zdl-vscode",
   "description": "ZDL Editor for VSCode",
   "icon": "resources/zenwave-logo.png",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "license": "MIT",
   "publisher": "ZenWave360",
   "bugs": {
